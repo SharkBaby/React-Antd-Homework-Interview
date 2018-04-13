@@ -4,6 +4,9 @@ class TickClock1 extends React.Component{
         super(props);
         this.state = {date1: new Date()};
     }
+    shouldComponentUpdate(nextProps, nextState){
+        return false;
+    }
     componentDidMount(){
         this.timerId = setInterval(()=>this.tick(),2000);
     }

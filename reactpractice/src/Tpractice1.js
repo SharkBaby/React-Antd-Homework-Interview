@@ -4,7 +4,7 @@ class TPractice1 extends React.Component {
     render() {
         return (
             <div>
-                <TPractice1_1 name={this.props.name} />
+                <TPractice1_1 name={this.props.name} value={this.props.children}/>
                 <TPractice1_1 name={this.props.name} />
             </div>
         )

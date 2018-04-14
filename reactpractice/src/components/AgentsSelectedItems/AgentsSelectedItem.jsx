@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tag, Icon, Popover } from 'antd';
+import { Tag, Icon, Popover, Input, Button } from 'antd';
 
 // Import css style for this component
 import './AgentsSelectedItem.css';
@@ -8,7 +8,8 @@ class AgentsSelectedItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            twItemProps: this.props.twItemProps
+            twItemProps: this.props.twItemProps,
+            toBeAddedResces: ''
         }
         this.closeTagEvnt = this.closeTagEvnt.bind(this);
     }
@@ -22,12 +23,27 @@ class AgentsSelectedItem extends Component {
 
     }
     closeTagEvnt(resourceArr, resourceIndex) {
-        // delete resource
+        // Delete resource
         resourceArr.resources.splice(resourceIndex, 1);
         this.setState({
             twItemProps: resourceArr
         });
-        console.log(resourceArr);
+    }
+    addResourceEvnt = (e) => {
+        // Add resource
+        const tobeMerged = this.state.toBeAddedResces.split(',');
+        this.state.twItemProps.resources = this.state.twItemProps.resources.concat(tobeMerged);
+        this.setState(prevState => ({
+            twItemProps: prevState.twItemProps
+        }));
+        //empty input box
+        e.target.parentElement.parentElement.querySelector('input').value = '';
+    }
+    // Set state added resources
+    onAddResrceVal = (e) => {
+        this.setState({
+            toBeAddedResces: e.target.value
+        });
     }
     render() {
         let isDenyClass;
@@ -36,6 +52,19 @@ class AgentsSelectedItem extends Component {
         let tagResources = twItemProps.resources.map((tagItem, tagIndex) => {
             return <Tag closable onClose={() => this.closeTagEvnt(twItemProps, tagIndex)} key={tagIndex}>{tagItem}</Tag>
         });
+        // set add resource UI element
+        const addResrceInput = (
+            <div className="">
+                <div>
+                    <span>(separate multiple resources name with commas)</span>
+                </div>
+                <Input placeholder="Input separate multiple resources name with commas" className="addResrce_input" onChange={this.onAddResrceVal} />
+                <div className="">
+                    <Button className="addResrce_button" onMouseUp={this.addResourceEvnt}>Add resources</Button>
+                    <Button className="close_button">Close</Button>
+                </div>
+            </div>
+        );
         if (twItemProps.isDeny) {
             isDenyClass = 'isDenyClass';
             isDenyElement = (
@@ -53,8 +82,8 @@ class AgentsSelectedItem extends Component {
                         <strong>{twItemProps.twUrl} | {twItemProps.progress} | {twItemProps.ipAddress} | {twItemProps.phyAddress}</strong>
                     </div>
                     <div className="resourceItem_div">
-                        <Popover content="Hello World" title="(separate multiple resources name with commas)" placement="bottom" trigger="focus">
-                        <a href="#"><Icon type="plus" />Specify Resource</a>
+                        <Popover placement="bottomRight" title="" content={addResrceInput} trigger="click">
+                            <a href="#"><Icon type="plus" />Specify Resource</a>
                         </Popover> | Resources: {tagResources}
                     </div>
                     {isDenyElement}

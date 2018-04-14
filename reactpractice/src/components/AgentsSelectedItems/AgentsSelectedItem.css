@@ -8,12 +8,15 @@ div.agentsSelectedItem_div {
     -moz-border-radius: 10px;
     min-height: 90px;
 }
+
 div.isDenyClass {
     background-color: rgb(204, 232, 181);
 }
+
 div.notDenyClass {
     background-color: rgb(255, 251, 185);
 }
+
 div.img-circle {
     width: 50px;
     height: 50px;
@@ -22,12 +25,25 @@ div.img-circle {
     float: left;
     margin-right: 20px;
 }
-div.contentItem_div{
+
+div.contentItem_div {
     margin: 20px;
 }
-div.resourceItem_div{
+
+div.resourceItem_div {
     float: left;
 }
-div.denyIcon_div{
+
+div.denyIcon_div {
     float: right;
 }
+
+.addResrce_input {
+    margin: 10px auto !important;
+}
+
+.addResrce_button {
+    margin-right: 10px;
+}
+
+.close_button {}

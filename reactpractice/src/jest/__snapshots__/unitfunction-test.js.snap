@@ -1,0 +1,2488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changes the class when hovered 1`] = `
+<a
+  className="normal"
+  href="http://www.facebook.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
+
+exports[`changes the class when hovered 2`] = `
+<a
+  className="hovered"
+  href="http://www.facebook.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
+
+exports[`changes the class when hovered 3`] = `
+<a
+  className="normal"
+  href="http://www.facebook.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;
+
+exports[`display AgentsHistory correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AgentsHistory
+    className=""
+    historyItemProps="bjstdmngbgr02/Acceptance_test"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Col
+        span={24}
+      >
+        bjstdmngbgr02/Acceptance_test
+      </Col>,
+      "className": "historyItem",
+      "gutter": 0,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "bjstdmngbgr02/Acceptance_test",
+        "span": 24,
+      },
+      "ref": null,
+      "rendered": "bjstdmngbgr02/Acceptance_test",
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Col
+          span={24}
+        >
+          bjstdmngbgr02/Acceptance_test
+        </Col>,
+        "className": "historyItem",
+        "gutter": 0,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "bjstdmngbgr02/Acceptance_test",
+          "span": 24,
+        },
+        "ref": null,
+        "rendered": "bjstdmngbgr02/Acceptance_test",
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`display AgentsSelectedItem correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AgentsSelectedItem
+    className=""
+    twItemProps={
+      Object {
+        "ipAddress": "192.168.1.,2",
+        "isDeny": true,
+        "phyAddress": "/var/lib/cruise-agent",
+        "progress": "idle",
+        "resources": Array [
+          "ubuntu",
+          "firefox3",
+          "core-duo",
+        ],
+        "twUrl": "bjstdmngbgr02.thoughtworks.com",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="contentItem_div"
+      >
+        <div
+          className="img-circle"
+        />
+        <div
+          className=""
+        >
+          <strong>
+            bjstdmngbgr02.thoughtworks.com
+             | 
+            idle
+             | 
+            192.168.1.,2
+             | 
+            /var/lib/cruise-agent
+          </strong>
+        </div>
+        <div
+          className="resourceItem_div"
+        >
+          <Popover
+            content={
+              <div
+                className=""
+              >
+                <div>
+                  <span>
+                    (separate multiple resources name with commas)
+                  </span>
+                </div>
+                <Input
+                  className="addResrce_input"
+                  disabled={false}
+                  onChange={[Function]}
+                  placeholder="Input separate multiple resources name with commas"
+                  prefixCls="ant-input"
+                  type="text"
+                />
+                <div
+                  className=""
+                >
+                  <Button
+                    className="addResrce_button"
+                    ghost={false}
+                    loading={false}
+                    onMouseUp={[Function]}
+                    prefixCls="ant-btn"
+                  >
+                    Add resources
+                  </Button>
+                  <Button
+                    className="close_button"
+                    ghost={false}
+                    loading={false}
+                    prefixCls="ant-btn"
+                  >
+                    Close
+                  </Button>
+                </div>
+              </div>
+            }
+            mouseEnterDelay={0.1}
+            mouseLeaveDelay={0.1}
+            overlayStyle={Object {}}
+            placement="bottomRight"
+            prefixCls="ant-popover"
+            title=""
+            transitionName="zoom-big"
+            trigger="click"
+          >
+            <a
+              href="#"
+            >
+              <Icon
+                type="plus"
+              />
+              Specify Resource
+            </a>
+          </Popover>
+           | Resources: 
+          <Tag
+            closable={true}
+            onClose={[Function]}
+            prefixCls="ant-tag"
+          >
+            ubuntu
+          </Tag>
+          <Tag
+            closable={true}
+            onClose={[Function]}
+            prefixCls="ant-tag"
+          >
+            firefox3
+          </Tag>
+          <Tag
+            closable={true}
+            onClose={[Function]}
+            prefixCls="ant-tag"
+          >
+            core-duo
+          </Tag>
+        </div>
+        <div
+          className="denyIcon_div"
+        >
+          <Icon
+            type="minus-circle-o"
+          />
+           
+          <a
+            href=""
+          >
+            Deny
+          </a>
+        </div>
+      </div>,
+      "className": "agentsSelectedItem_div isDenyClass",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="img-circle"
+          />,
+          <div
+            className=""
+          >
+            <strong>
+              bjstdmngbgr02.thoughtworks.com
+               | 
+              idle
+               | 
+              192.168.1.,2
+               | 
+              /var/lib/cruise-agent
+            </strong>
+          </div>,
+          <div
+            className="resourceItem_div"
+          >
+            <Popover
+              content={
+                <div
+                  className=""
+                >
+                  <div>
+                    <span>
+                      (separate multiple resources name with commas)
+                    </span>
+                  </div>
+                  <Input
+                    className="addResrce_input"
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Input separate multiple resources name with commas"
+                    prefixCls="ant-input"
+                    type="text"
+                  />
+                  <div
+                    className=""
+                  >
+                    <Button
+                      className="addResrce_button"
+                      ghost={false}
+                      loading={false}
+                      onMouseUp={[Function]}
+                      prefixCls="ant-btn"
+                    >
+                      Add resources
+                    </Button>
+                    <Button
+                      className="close_button"
+                      ghost={false}
+                      loading={false}
+                      prefixCls="ant-btn"
+                    >
+                      Close
+                    </Button>
+                  </div>
+                </div>
+              }
+              mouseEnterDelay={0.1}
+              mouseLeaveDelay={0.1}
+              overlayStyle={Object {}}
+              placement="bottomRight"
+              prefixCls="ant-popover"
+              title=""
+              transitionName="zoom-big"
+              trigger="click"
+            >
+              <a
+                href="#"
+              >
+                <Icon
+                  type="plus"
+                />
+                Specify Resource
+              </a>
+            </Popover>
+             | Resources: 
+            <Tag
+              closable={true}
+              onClose={[Function]}
+              prefixCls="ant-tag"
+            >
+              ubuntu
+            </Tag>
+            <Tag
+              closable={true}
+              onClose={[Function]}
+              prefixCls="ant-tag"
+            >
+              firefox3
+            </Tag>
+            <Tag
+              closable={true}
+              onClose={[Function]}
+              prefixCls="ant-tag"
+            >
+              core-duo
+            </Tag>
+          </div>,
+          <div
+            className="denyIcon_div"
+          >
+            <Icon
+              type="minus-circle-o"
+            />
+             
+            <a
+              href=""
+            >
+              Deny
+            </a>
+          </div>,
+        ],
+        "className": "contentItem_div",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "img-circle",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <strong>
+              bjstdmngbgr02.thoughtworks.com
+               | 
+              idle
+               | 
+              192.168.1.,2
+               | 
+              /var/lib/cruise-agent
+            </strong>,
+            "className": "",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "bjstdmngbgr02.thoughtworks.com",
+                " | ",
+                "idle",
+                " | ",
+                "192.168.1.,2",
+                " | ",
+                "/var/lib/cruise-agent",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "bjstdmngbgr02.thoughtworks.com",
+              " | ",
+              "idle",
+              " | ",
+              "192.168.1.,2",
+              " | ",
+              "/var/lib/cruise-agent",
+            ],
+            "type": "strong",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Popover
+                content={
+                  <div
+                    className=""
+                  >
+                    <div>
+                      <span>
+                        (separate multiple resources name with commas)
+                      </span>
+                    </div>
+                    <Input
+                      className="addResrce_input"
+                      disabled={false}
+                      onChange={[Function]}
+                      placeholder="Input separate multiple resources name with commas"
+                      prefixCls="ant-input"
+                      type="text"
+                    />
+                    <div
+                      className=""
+                    >
+                      <Button
+                        className="addResrce_button"
+                        ghost={false}
+                        loading={false}
+                        onMouseUp={[Function]}
+                        prefixCls="ant-btn"
+                      >
+                        Add resources
+                      </Button>
+                      <Button
+                        className="close_button"
+                        ghost={false}
+                        loading={false}
+                        prefixCls="ant-btn"
+                      >
+                        Close
+                      </Button>
+                    </div>
+                  </div>
+                }
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                overlayStyle={Object {}}
+                placement="bottomRight"
+                prefixCls="ant-popover"
+                title=""
+                transitionName="zoom-big"
+                trigger="click"
+              >
+                <a
+                  href="#"
+                >
+                  <Icon
+                    type="plus"
+                  />
+                  Specify Resource
+                </a>
+              </Popover>,
+              " | Resources: ",
+              Array [
+                <Tag
+                  closable={true}
+                  onClose={[Function]}
+                  prefixCls="ant-tag"
+                >
+                  ubuntu
+                </Tag>,
+                <Tag
+                  closable={true}
+                  onClose={[Function]}
+                  prefixCls="ant-tag"
+                >
+                  firefox3
+                </Tag>,
+                <Tag
+                  closable={true}
+                  onClose={[Function]}
+                  prefixCls="ant-tag"
+                >
+                  core-duo
+                </Tag>,
+              ],
+            ],
+            "className": "resourceItem_div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <a
+                  href="#"
+                >
+                  <Icon
+                    type="plus"
+                  />
+                  Specify Resource
+                </a>,
+                "content": <div
+                  className=""
+                >
+                  <div>
+                    <span>
+                      (separate multiple resources name with commas)
+                    </span>
+                  </div>
+                  <Input
+                    className="addResrce_input"
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Input separate multiple resources name with commas"
+                    prefixCls="ant-input"
+                    type="text"
+                  />
+                  <div
+                    className=""
+                  >
+                    <Button
+                      className="addResrce_button"
+                      ghost={false}
+                      loading={false}
+                      onMouseUp={[Function]}
+                      prefixCls="ant-btn"
+                    >
+                      Add resources
+                    </Button>
+                    <Button
+                      className="close_button"
+                      ghost={false}
+                      loading={false}
+                      prefixCls="ant-btn"
+                    >
+                      Close
+                    </Button>
+                  </div>
+                </div>,
+                "mouseEnterDelay": 0.1,
+                "mouseLeaveDelay": 0.1,
+                "overlayStyle": Object {},
+                "placement": "bottomRight",
+                "prefixCls": "ant-popover",
+                "title": "",
+                "transitionName": "zoom-big",
+                "trigger": "click",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Icon
+                      type="plus"
+                    />,
+                    "Specify Resource",
+                  ],
+                  "href": "#",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "type": "plus",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "Specify Resource",
+                ],
+                "type": "a",
+              },
+              "type": [Function],
+            },
+            " | Resources: ",
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "children": "ubuntu",
+                "closable": true,
+                "onClose": [Function],
+                "prefixCls": "ant-tag",
+              },
+              "ref": null,
+              "rendered": "ubuntu",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "children": "firefox3",
+                "closable": true,
+                "onClose": [Function],
+                "prefixCls": "ant-tag",
+              },
+              "ref": null,
+              "rendered": "firefox3",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "children": "core-duo",
+                "closable": true,
+                "onClose": [Function],
+                "prefixCls": "ant-tag",
+              },
+              "ref": null,
+              "rendered": "core-duo",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Icon
+                type="minus-circle-o"
+              />,
+              " ",
+              <a
+                href=""
+              >
+                Deny
+              </a>,
+            ],
+            "className": "denyIcon_div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "type": "minus-circle-o",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Deny",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": "Deny",
+              "type": "a",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="contentItem_div"
+        >
+          <div
+            className="img-circle"
+          />
+          <div
+            className=""
+          >
+            <strong>
+              bjstdmngbgr02.thoughtworks.com
+               | 
+              idle
+               | 
+              192.168.1.,2
+               | 
+              /var/lib/cruise-agent
+            </strong>
+          </div>
+          <div
+            className="resourceItem_div"
+          >
+            <Popover
+              content={
+                <div
+                  className=""
+                >
+                  <div>
+                    <span>
+                      (separate multiple resources name with commas)
+                    </span>
+                  </div>
+                  <Input
+                    className="addResrce_input"
+                    disabled={false}
+                    onChange={[Function]}
+                    placeholder="Input separate multiple resources name with commas"
+                    prefixCls="ant-input"
+                    type="text"
+                  />
+                  <div
+                    className=""
+                  >
+                    <Button
+                      className="addResrce_button"
+                      ghost={false}
+                      loading={false}
+                      onMouseUp={[Function]}
+                      prefixCls="ant-btn"
+                    >
+                      Add resources
+                    </Button>
+                    <Button
+                      className="close_button"
+                      ghost={false}
+                      loading={false}
+                      prefixCls="ant-btn"
+                    >
+                      Close
+                    </Button>
+                  </div>
+                </div>
+              }
+              mouseEnterDelay={0.1}
+              mouseLeaveDelay={0.1}
+              overlayStyle={Object {}}
+              placement="bottomRight"
+              prefixCls="ant-popover"
+              title=""
+              transitionName="zoom-big"
+              trigger="click"
+            >
+              <a
+                href="#"
+              >
+                <Icon
+                  type="plus"
+                />
+                Specify Resource
+              </a>
+            </Popover>
+             | Resources: 
+            <Tag
+              closable={true}
+              onClose={[Function]}
+              prefixCls="ant-tag"
+            >
+              ubuntu
+            </Tag>
+            <Tag
+              closable={true}
+              onClose={[Function]}
+              prefixCls="ant-tag"
+            >
+              firefox3
+            </Tag>
+            <Tag
+              closable={true}
+              onClose={[Function]}
+              prefixCls="ant-tag"
+            >
+              core-duo
+            </Tag>
+          </div>
+          <div
+            className="denyIcon_div"
+          >
+            <Icon
+              type="minus-circle-o"
+            />
+             
+            <a
+              href=""
+            >
+              Deny
+            </a>
+          </div>
+        </div>,
+        "className": "agentsSelectedItem_div isDenyClass",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="img-circle"
+            />,
+            <div
+              className=""
+            >
+              <strong>
+                bjstdmngbgr02.thoughtworks.com
+                 | 
+                idle
+                 | 
+                192.168.1.,2
+                 | 
+                /var/lib/cruise-agent
+              </strong>
+            </div>,
+            <div
+              className="resourceItem_div"
+            >
+              <Popover
+                content={
+                  <div
+                    className=""
+                  >
+                    <div>
+                      <span>
+                        (separate multiple resources name with commas)
+                      </span>
+                    </div>
+                    <Input
+                      className="addResrce_input"
+                      disabled={false}
+                      onChange={[Function]}
+                      placeholder="Input separate multiple resources name with commas"
+                      prefixCls="ant-input"
+                      type="text"
+                    />
+                    <div
+                      className=""
+                    >
+                      <Button
+                        className="addResrce_button"
+                        ghost={false}
+                        loading={false}
+                        onMouseUp={[Function]}
+                        prefixCls="ant-btn"
+                      >
+                        Add resources
+                      </Button>
+                      <Button
+                        className="close_button"
+                        ghost={false}
+                        loading={false}
+                        prefixCls="ant-btn"
+                      >
+                        Close
+                      </Button>
+                    </div>
+                  </div>
+                }
+                mouseEnterDelay={0.1}
+                mouseLeaveDelay={0.1}
+                overlayStyle={Object {}}
+                placement="bottomRight"
+                prefixCls="ant-popover"
+                title=""
+                transitionName="zoom-big"
+                trigger="click"
+              >
+                <a
+                  href="#"
+                >
+                  <Icon
+                    type="plus"
+                  />
+                  Specify Resource
+                </a>
+              </Popover>
+               | Resources: 
+              <Tag
+                closable={true}
+                onClose={[Function]}
+                prefixCls="ant-tag"
+              >
+                ubuntu
+              </Tag>
+              <Tag
+                closable={true}
+                onClose={[Function]}
+                prefixCls="ant-tag"
+              >
+                firefox3
+              </Tag>
+              <Tag
+                closable={true}
+                onClose={[Function]}
+                prefixCls="ant-tag"
+              >
+                core-duo
+              </Tag>
+            </div>,
+            <div
+              className="denyIcon_div"
+            >
+              <Icon
+                type="minus-circle-o"
+              />
+               
+              <a
+                href=""
+              >
+                Deny
+              </a>
+            </div>,
+          ],
+          "className": "contentItem_div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "img-circle",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <strong>
+                bjstdmngbgr02.thoughtworks.com
+                 | 
+                idle
+                 | 
+                192.168.1.,2
+                 | 
+                /var/lib/cruise-agent
+              </strong>,
+              "className": "",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "bjstdmngbgr02.thoughtworks.com",
+                  " | ",
+                  "idle",
+                  " | ",
+                  "192.168.1.,2",
+                  " | ",
+                  "/var/lib/cruise-agent",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "bjstdmngbgr02.thoughtworks.com",
+                " | ",
+                "idle",
+                " | ",
+                "192.168.1.,2",
+                " | ",
+                "/var/lib/cruise-agent",
+              ],
+              "type": "strong",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Popover
+                  content={
+                    <div
+                      className=""
+                    >
+                      <div>
+                        <span>
+                          (separate multiple resources name with commas)
+                        </span>
+                      </div>
+                      <Input
+                        className="addResrce_input"
+                        disabled={false}
+                        onChange={[Function]}
+                        placeholder="Input separate multiple resources name with commas"
+                        prefixCls="ant-input"
+                        type="text"
+                      />
+                      <div
+                        className=""
+                      >
+                        <Button
+                          className="addResrce_button"
+                          ghost={false}
+                          loading={false}
+                          onMouseUp={[Function]}
+                          prefixCls="ant-btn"
+                        >
+                          Add resources
+                        </Button>
+                        <Button
+                          className="close_button"
+                          ghost={false}
+                          loading={false}
+                          prefixCls="ant-btn"
+                        >
+                          Close
+                        </Button>
+                      </div>
+                    </div>
+                  }
+                  mouseEnterDelay={0.1}
+                  mouseLeaveDelay={0.1}
+                  overlayStyle={Object {}}
+                  placement="bottomRight"
+                  prefixCls="ant-popover"
+                  title=""
+                  transitionName="zoom-big"
+                  trigger="click"
+                >
+                  <a
+                    href="#"
+                  >
+                    <Icon
+                      type="plus"
+                    />
+                    Specify Resource
+                  </a>
+                </Popover>,
+                " | Resources: ",
+                Array [
+                  <Tag
+                    closable={true}
+                    onClose={[Function]}
+                    prefixCls="ant-tag"
+                  >
+                    ubuntu
+                  </Tag>,
+                  <Tag
+                    closable={true}
+                    onClose={[Function]}
+                    prefixCls="ant-tag"
+                  >
+                    firefox3
+                  </Tag>,
+                  <Tag
+                    closable={true}
+                    onClose={[Function]}
+                    prefixCls="ant-tag"
+                  >
+                    core-duo
+                  </Tag>,
+                ],
+              ],
+              "className": "resourceItem_div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <a
+                    href="#"
+                  >
+                    <Icon
+                      type="plus"
+                    />
+                    Specify Resource
+                  </a>,
+                  "content": <div
+                    className=""
+                  >
+                    <div>
+                      <span>
+                        (separate multiple resources name with commas)
+                      </span>
+                    </div>
+                    <Input
+                      className="addResrce_input"
+                      disabled={false}
+                      onChange={[Function]}
+                      placeholder="Input separate multiple resources name with commas"
+                      prefixCls="ant-input"
+                      type="text"
+                    />
+                    <div
+                      className=""
+                    >
+                      <Button
+                        className="addResrce_button"
+                        ghost={false}
+                        loading={false}
+                        onMouseUp={[Function]}
+                        prefixCls="ant-btn"
+                      >
+                        Add resources
+                      </Button>
+                      <Button
+                        className="close_button"
+                        ghost={false}
+                        loading={false}
+                        prefixCls="ant-btn"
+                      >
+                        Close
+                      </Button>
+                    </div>
+                  </div>,
+                  "mouseEnterDelay": 0.1,
+                  "mouseLeaveDelay": 0.1,
+                  "overlayStyle": Object {},
+                  "placement": "bottomRight",
+                  "prefixCls": "ant-popover",
+                  "title": "",
+                  "transitionName": "zoom-big",
+                  "trigger": "click",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Icon
+                        type="plus"
+                      />,
+                      "Specify Resource",
+                    ],
+                    "href": "#",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "type": "plus",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "Specify Resource",
+                  ],
+                  "type": "a",
+                },
+                "type": [Function],
+              },
+              " | Resources: ",
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "ubuntu",
+                  "closable": true,
+                  "onClose": [Function],
+                  "prefixCls": "ant-tag",
+                },
+                "ref": null,
+                "rendered": "ubuntu",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "firefox3",
+                  "closable": true,
+                  "onClose": [Function],
+                  "prefixCls": "ant-tag",
+                },
+                "ref": null,
+                "rendered": "firefox3",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "core-duo",
+                  "closable": true,
+                  "onClose": [Function],
+                  "prefixCls": "ant-tag",
+                },
+                "ref": null,
+                "rendered": "core-duo",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Icon
+                  type="minus-circle-o"
+                />,
+                " ",
+                <a
+                  href=""
+                >
+                  Deny
+                </a>,
+              ],
+              "className": "denyIcon_div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "type": "minus-circle-o",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Deny",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": "Deny",
+                "type": "a",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`display AgentsSummary correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AgentsSummary
+    className=""
+    summaryItemProps={
+      Object {
+        "amount": 2,
+        "progress": "building",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Col
+          className=""
+          span={12}
+        >
+          building
+        </Col>,
+        <Col
+          className=""
+          span={12}
+        >
+          2
+        </Col>,
+      ],
+      "className": "historyItem",
+      "gutter": 0,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "building",
+          "className": "",
+          "span": 12,
+        },
+        "ref": null,
+        "rendered": "building",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": 2,
+          "className": "",
+          "span": 12,
+        },
+        "ref": null,
+        "rendered": 2,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Col
+            className=""
+            span={12}
+          >
+            building
+          </Col>,
+          <Col
+            className=""
+            span={12}
+          >
+            2
+          </Col>,
+        ],
+        "className": "historyItem",
+        "gutter": 0,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "building",
+            "className": "",
+            "span": 12,
+          },
+          "ref": null,
+          "rendered": "building",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": 2,
+            "className": "",
+            "span": 12,
+          },
+          "ref": null,
+          "rendered": 2,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`display AgentsSummaryHistory correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AgentsSummaryHistory />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Row
+        gutter={0}
+      >
+        <Col
+          className="summaryHistory"
+          span={24}
+        >
+          Summary
+        </Col>
+        <Col
+          className="itemDetail"
+          span={24}
+        >
+          <AgentsSummary
+            className=""
+            summaryItemProps={
+              Object {
+                "amount": 2,
+                "progress": "building",
+              }
+            }
+          />
+          <AgentsSummary
+            className=""
+            summaryItemProps={
+              Object {
+                "amount": 2,
+                "progress": "idle",
+              }
+            }
+          />
+        </Col>
+        <Col
+          className="summaryHistory"
+          span={24}
+        >
+          History
+        </Col>
+        <Col
+          className="itemDetail"
+          span={24}
+        >
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+          <AgentsHistory
+            className=""
+            historyItemProps="bjstdmngbgr02/Acceptance_test"
+          />
+        </Col>
+      </Row>,
+      "className": "rightPart_div",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Col
+            className="summaryHistory"
+            span={24}
+          >
+            Summary
+          </Col>,
+          <Col
+            className="itemDetail"
+            span={24}
+          >
+            <AgentsSummary
+              className=""
+              summaryItemProps={
+                Object {
+                  "amount": 2,
+                  "progress": "building",
+                }
+              }
+            />
+            <AgentsSummary
+              className=""
+              summaryItemProps={
+                Object {
+                  "amount": 2,
+                  "progress": "idle",
+                }
+              }
+            />
+          </Col>,
+          <Col
+            className="summaryHistory"
+            span={24}
+          >
+            History
+          </Col>,
+          <Col
+            className="itemDetail"
+            span={24}
+          >
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+          </Col>,
+        ],
+        "gutter": 0,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Summary",
+            "className": "summaryHistory",
+            "span": 24,
+          },
+          "ref": null,
+          "rendered": "Summary",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <AgentsSummary
+                className=""
+                summaryItemProps={
+                  Object {
+                    "amount": 2,
+                    "progress": "building",
+                  }
+                }
+              />,
+              <AgentsSummary
+                className=""
+                summaryItemProps={
+                  Object {
+                    "amount": 2,
+                    "progress": "idle",
+                  }
+                }
+              />,
+            ],
+            "className": "itemDetail",
+            "span": 24,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "summaryItemProps": Object {
+                  "amount": 2,
+                  "progress": "building",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "summaryItemProps": Object {
+                  "amount": 2,
+                  "progress": "idle",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "History",
+            "className": "summaryHistory",
+            "span": 24,
+          },
+          "ref": null,
+          "rendered": "History",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />,
+            ],
+            "className": "itemDetail",
+            "span": 24,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "8",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "9",
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Row
+          gutter={0}
+        >
+          <Col
+            className="summaryHistory"
+            span={24}
+          >
+            Summary
+          </Col>
+          <Col
+            className="itemDetail"
+            span={24}
+          >
+            <AgentsSummary
+              className=""
+              summaryItemProps={
+                Object {
+                  "amount": 2,
+                  "progress": "building",
+                }
+              }
+            />
+            <AgentsSummary
+              className=""
+              summaryItemProps={
+                Object {
+                  "amount": 2,
+                  "progress": "idle",
+                }
+              }
+            />
+          </Col>
+          <Col
+            className="summaryHistory"
+            span={24}
+          >
+            History
+          </Col>
+          <Col
+            className="itemDetail"
+            span={24}
+          >
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+            <AgentsHistory
+              className=""
+              historyItemProps="bjstdmngbgr02/Acceptance_test"
+            />
+          </Col>
+        </Row>,
+        "className": "rightPart_div",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Col
+              className="summaryHistory"
+              span={24}
+            >
+              Summary
+            </Col>,
+            <Col
+              className="itemDetail"
+              span={24}
+            >
+              <AgentsSummary
+                className=""
+                summaryItemProps={
+                  Object {
+                    "amount": 2,
+                    "progress": "building",
+                  }
+                }
+              />
+              <AgentsSummary
+                className=""
+                summaryItemProps={
+                  Object {
+                    "amount": 2,
+                    "progress": "idle",
+                  }
+                }
+              />
+            </Col>,
+            <Col
+              className="summaryHistory"
+              span={24}
+            >
+              History
+            </Col>,
+            <Col
+              className="itemDetail"
+              span={24}
+            >
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+              <AgentsHistory
+                className=""
+                historyItemProps="bjstdmngbgr02/Acceptance_test"
+              />
+            </Col>,
+          ],
+          "gutter": 0,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Summary",
+              "className": "summaryHistory",
+              "span": 24,
+            },
+            "ref": null,
+            "rendered": "Summary",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <AgentsSummary
+                  className=""
+                  summaryItemProps={
+                    Object {
+                      "amount": 2,
+                      "progress": "building",
+                    }
+                  }
+                />,
+                <AgentsSummary
+                  className=""
+                  summaryItemProps={
+                    Object {
+                      "amount": 2,
+                      "progress": "idle",
+                    }
+                  }
+                />,
+              ],
+              "className": "itemDetail",
+              "span": 24,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "summaryItemProps": Object {
+                    "amount": 2,
+                    "progress": "building",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "summaryItemProps": Object {
+                    "amount": 2,
+                    "progress": "idle",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "History",
+              "className": "summaryHistory",
+              "span": 24,
+            },
+            "ref": null,
+            "rendered": "History",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+                <AgentsHistory
+                  className=""
+                  historyItemProps="bjstdmngbgr02/Acceptance_test"
+                />,
+              ],
+              "className": "itemDetail",
+              "span": 24,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "3",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "4",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "5",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "6",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "7",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "8",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "9",
+                "nodeType": "function",
+                "props": Object {
+                  "className": "",
+                  "historyItemProps": "bjstdmngbgr02/Acceptance_test",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`display agents button correctly 1`] = `
+<div
+  className="agentsButton_div"
+>
+  <span>
+    Agents
+  </span>
+  <button
+    className="ant-btn agentsButton_button ant-btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      All
+    </span>
+  </button>
+  <button
+    className="ant-btn agentsButton_button ant-btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Physical
+    </span>
+  </button>
+  <button
+    className="ant-btn agentsButton_button ant-btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Virtual
+    </span>
+  </button>
+</div>
+`;
+
+exports[`display signed in correctly 1`] = `
+<div
+  className="signedIn_div"
+>
+  <h3
+    className="signedIn_h3"
+  >
+    Signed in as Member
+  </h3>
+  <i
+    className="anticon anticon-spin anticon-logout"
+  />
+  <h3
+    className="signedIn_h3"
+  >
+    Sign out
+  </h3>
+</div>
+`;
+
+exports[`properly escapes quotes 1`] = `
+<a
+  className="normal"
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  "Facebook" \\'is \\ 'awesome'
+</a>
+`;
+
+exports[`renders as an anchor when no page is set 1`] = `
+<a
+  className="normal"
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  Facebook
+</a>
+`;

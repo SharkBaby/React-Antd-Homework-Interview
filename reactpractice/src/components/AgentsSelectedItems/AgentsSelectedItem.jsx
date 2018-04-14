@@ -1,38 +1,67 @@
 import React, { Component } from 'react';
-import { Tag, Icon } from 'antd';
+import { Tag, Icon, Popover } from 'antd';
 
 // Import css style for this component
 import './AgentsSelectedItem.css';
 
-const AgentsSelectedItem = ({ twItemProps }) => {
-    let isDenyClass;
-    let isDenyElement;
-    let tagResources = twItemProps.resources.map((tagItem, tagIndex) => {
-        return <Tag closable onClose={this.closeTagEvnt}>{tagItem}</Tag>
-    });
-    if (twItemProps.isDeny) {
-        isDenyClass = 'isDenyClass';
-        isDenyElement = (
-            <div className="denyIcon_div">
-                <Icon type="minus-circle-o" /> <a href="">Deny</a>
+class AgentsSelectedItem extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            twItemProps: this.props.twItemProps
+        }
+        this.closeTagEvnt = this.closeTagEvnt.bind(this);
+    }
+    shouldComponentUpdate(nextProps, nextState) {
+        return true;
+    }
+    componentDidMount() {
+
+    }
+    componentWillUnmount() {
+
+    }
+    closeTagEvnt(resourceArr, resourceIndex) {
+        // delete resource
+        resourceArr.resources.splice(resourceIndex, 1);
+        this.setState({
+            twItemProps: resourceArr
+        });
+        console.log(resourceArr);
+    }
+    render() {
+        let isDenyClass;
+        let isDenyElement;
+        let twItemProps = this.state.twItemProps;
+        let tagResources = twItemProps.resources.map((tagItem, tagIndex) => {
+            return <Tag closable onClose={() => this.closeTagEvnt(twItemProps, tagIndex)} key={tagIndex}>{tagItem}</Tag>
+        });
+        if (twItemProps.isDeny) {
+            isDenyClass = 'isDenyClass';
+            isDenyElement = (
+                <div className="denyIcon_div">
+                    <Icon type="minus-circle-o" /> <a href="">Deny</a>
+                </div>
+            );
+        } else isDenyClass = 'notDenyClass';
+        const element = (
+            <div className={"agentsSelectedItem_div " + isDenyClass}>
+                <div className="contentItem_div">
+                    <div className="img-circle">
+                    </div>
+                    <div className="">
+                        <strong>{twItemProps.twUrl} | {twItemProps.progress} | {twItemProps.ipAddress} | {twItemProps.phyAddress}</strong>
+                    </div>
+                    <div className="resourceItem_div">
+                        <Popover content="Hello World" title="(separate multiple resources name with commas)" placement="bottom" trigger="focus">
+                        <a href="#"><Icon type="plus" />Specify Resource</a>
+                        </Popover> | Resources: {tagResources}
+                    </div>
+                    {isDenyElement}
+                </div>
             </div>
         );
-    } else isDenyClass = 'notDenyClass';
-    const element = (
-        <div className={"agentsSelectedItem_div " + isDenyClass}>
-            <div className="contentItem_div">
-                <div className="img-circle">
-                </div>
-                <div className="">
-                    <strong>{twItemProps.twUrl} | {twItemProps.progress} | {twItemProps.ipAddress} | {twItemProps.phyAddress}</strong>
-                </div>
-                <div className="resourceItem_div">
-                    <Icon type="plus" /> <a href="">Specify Resource</a> | Resources: {tagResources}
-                </div>
-                {isDenyElement}
-            </div>
-        </div>
-    );
-    return element;
+        return element;
+    }
 }
 export default AgentsSelectedItem;

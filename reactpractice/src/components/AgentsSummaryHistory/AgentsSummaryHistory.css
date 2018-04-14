@@ -4,7 +4,11 @@ div.rightPart_div{
 .summaryHistory{
     font-size: 18px;
     font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
 }
 .itemDetail{
     font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }

@@ -28,7 +28,7 @@ class AgentsButton extends Component {
     }
     render() {
         let buttonItems = this.state.buttonArr.map((buttonItem, buttonIndex) => {
-            return <Button type="primary" className="agentsButton_button">{buttonItem}</Button>
+            return <Button type="primary" className="agentsButton_button" key= {buttonIndex}>{buttonItem}</Button>
         });
         const element = (
             <div className="agentsButton_div">

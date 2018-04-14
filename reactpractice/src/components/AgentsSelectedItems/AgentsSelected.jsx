@@ -20,6 +20,7 @@ class AgentsSelected extends Component {
                 { twUrl: 'bjstdmngbgr05.thoughtworks.com', progress: 'idle', ipAddress: '192.168.1.5', phyAddress: '/var/lib/cruise-agent', resources: ['ubuntu'], isDeny: true }
             ]
         };
+        
     }
     tick() {
         this.setState({
@@ -37,13 +38,13 @@ class AgentsSelected extends Component {
     }
     render() {
         let twItems = this.state.thoughtworksArr.map((twItem, twIndex) => {
-            return <AgentsSelectedItem className="" twItemProps={twItem} />
+            return <AgentsSelectedItem className="" twItemProps={twItem} key={twIndex} />
         });
         const element = (
             <div className="">
                 <Row>
                     <Col span={18} className="lefttwItems_col">{twItems}</Col>
-                    <Col span={6}><AgentsSummaryHistory /></Col>
+                    <Col span={5} className="rightItems_col"><AgentsSummaryHistory /></Col>
                 </Row>
             </div>);
         return element;

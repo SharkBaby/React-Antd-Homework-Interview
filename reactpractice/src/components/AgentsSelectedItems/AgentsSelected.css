@@ -1,3 +1,6 @@
 .lefttwItems_col {
     text-align: left;
 }
+.rightItems_col{
+    float: right !important;
+}

@@ -12,12 +12,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest unitfunction-test --notify --config=./src/jest/config.json",
+    "test:watch": "npm test -- --watch",
     "eject": "react-scripts eject",
     "flow": "flow"
   },
   "devDependencies": {
     "babel-preset-flow": "^6.23.0",
-    "flow-bin": "^0.64.0"
+    "flow-bin": "^0.64.0",
+    "jest": "^22.4.3"
   }
 }

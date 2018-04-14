@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AgentsSummary from './AgentsSummary';
 import AgentsHistory from './AgentsHistory';
 
-import {Row, Col} from 'antd';
+import { Row, Col } from 'antd';
 
 import './AgentsSummaryHistory.css';
 
@@ -33,10 +33,10 @@ class AgentsSummaryHistory extends Component {
     }
     render() {
         let summaryItems = this.state.summaryArr.map((summaryItem, summaryIndex) => {
-            return <AgentsSummary className="" summaryItemProps={summaryItem} />
+            return <AgentsSummary className="" summaryItemProps={summaryItem} key={summaryIndex} />
         });
         let historyItems = this.state.historyArr.map((historyItem, historyIndex) => {
-            return <AgentsHistory className="" historyItemProps={historyItem} />
+            return <AgentsHistory className="" historyItemProps={historyItem} key={historyIndex} />
         });
         const element = (
             <div className="rightPart_div">

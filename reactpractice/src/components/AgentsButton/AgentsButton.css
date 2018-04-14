@@ -1,6 +1,23 @@
 .agentsButton_div{
     text-align: left;
+    background: rgb(96,96,96);
+    line-height: 50px;
+    border: 2px solid black;
+    padding-left: 10px;
 }
 .agentsButton_button{
-    margin-left: 20px;
+    border: 1px solid rgb(153,153,153) !important;
+    border-radius: 15px !important;
+    margin-left: 20px !important;
+    background: rgb(153,153,153) !important;
+    color: rgb(90,80,71) !important;
+}
+span.agents_span{
+    color: #fff;
+}
+.ant-radio-group .ant-radio-button-wrapper-checked{
+    background-color: rgb(219,219,219) !important;
+}
+.ant-radio-button-wrapper:not(:first-child)::before{
+    background: rgb(96,96,96) !important;
 }

@@ -41,10 +41,10 @@ class AgentsSelected extends Component {
             return <AgentsSelectedItem className="" twItemProps={twItem} key={twIndex} />
         });
         const element = (
-            <div className="">
+            <div className="displayItems_div">
                 <Row>
                     <Col span={18} className="lefttwItems_col">{twItems}</Col>
-                    <Col span={5} className="rightItems_col"><AgentsSummaryHistory /></Col>
+                    <Col span={6} className="rightItems_col"><AgentsSummaryHistory /></Col>
                 </Row>
             </div>);
         return element;

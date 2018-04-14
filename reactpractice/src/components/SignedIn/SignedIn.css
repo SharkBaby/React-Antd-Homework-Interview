@@ -1,5 +1,6 @@
 div.signedIn_div{
     text-align: right;
+    margin-bottom: 20px;
 }
 .signedIn_h3{
     display: inline;

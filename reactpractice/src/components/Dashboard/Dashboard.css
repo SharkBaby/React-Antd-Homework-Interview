@@ -1,7 +1,39 @@
 .dashboard_tabs {
     text-align: right;
 }
-h2.cruise_h2{
+
+h2.cruise_h2 {
     position: absolute;
-    top: 30px;
+}
+
+div.dashboard_div {
+    min-width: 936px;
+}
+
+/* UI enhancement for Tab change */
+
+.card-container>.ant-tabs-card>.ant-tabs-content {
+    margin-top: -16px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-content>.ant-tabs-tabpane {
+    background: #fff;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-bar {
+    /* border-bottom: 2px solid black; */
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab {
+    border: 2px solid black !important;
+    background: #fff !important;
+}
+
+.card-container>.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab-active {
+    border-bottom: none !important;
+    background: rgb(96, 96, 96) !important;
+    color: #fff !important;
 }

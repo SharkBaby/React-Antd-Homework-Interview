@@ -6,7 +6,7 @@ div.agentsSelectedItem_div {
     -webkit-border-radius: 10px;
     -ms-border-radius: 10px;
     -moz-border-radius: 10px;
-    min-height: 90px;
+    min-height: 75px;
 }
 
 div.isDenyClass {
@@ -27,17 +27,17 @@ div.img-circle {
 }
 
 div.contentItem_div {
-    margin: 20px;
+    margin: 10px;
 }
 
 div.resourceItem_div {
-    float: left;
+    color: black;
 }
 
-div.denyIcon_div {
-    float: right;
+a.deny_a{
+    color: black;
+    text-decoration: underline;
 }
-
 .addResrce_input {
     margin: 10px auto !important;
 }
@@ -46,4 +46,11 @@ div.denyIcon_div {
     margin-right: 10px;
 }
 
-.close_button {}
+a.specifyRes_a{
+    color: black;
+    text-decoration: underline;
+}
+.tagResource_tag{
+    background: none !important;
+    border: none !important;
+}

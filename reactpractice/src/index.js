@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import SingedIn from './components/SignedIn/SignedIn';
+// import SingedIn from './components/SignedIn/SignedIn';
 import Dashboard from './components/Dashboard/Dashboard';
 
 
@@ -23,7 +23,7 @@ ReactDOM.render(<EventExample />, document.getElementById('root1-2-EventExample'
 registerServiceWorker();
 // Start - Use flow to check static program - 2018-02-03
 // @flow
-ReactDOM.render(<SingedIn />, document.getElementById('signedIn'));
+// ReactDOM.render(<SingedIn />, document.getElementById('signedIn'));
 ReactDOM.render(<Dashboard />, document.getElementById('dashboard'));
 function callback(key) {
     console.log(key);

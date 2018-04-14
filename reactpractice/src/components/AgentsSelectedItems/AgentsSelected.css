@@ -1,6 +1,12 @@
 .lefttwItems_col {
     text-align: left;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
 }
 .rightItems_col{
-    float: right !important;
+    text-align: left;
+    padding-left: 10px !important;
+    border-left: 2px solid black;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }

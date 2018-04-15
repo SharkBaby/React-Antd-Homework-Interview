@@ -64,8 +64,8 @@ class AgentsSelectedItem extends Component {
         let isDenyClass;
         let isDenyElement;
         let twItemProps = this.state.twItemProps;
-        const tagResources = twItemProps.resources.map((tagItem, tagIndex) => {
-            return <Tag key={tagIndex} closable afterClose={() => this.closeTagEvnt(tagItem)} className="tagResource_tag">{tagItem}</Tag>
+        let tagResources = twItemProps.resources.map((tagItem, tagIndex) => {
+            return (<Tag key={tagIndex} closable afterClose={() => this.closeTagEvnt(tagItem)} className="tagResource_tag">{tagItem}</Tag>);
         });
         // set add resource UI element
         const addResrceInput = (
@@ -100,7 +100,7 @@ class AgentsSelectedItem extends Component {
                         <Row>
                             <Col span={5} className="">
                                 <Popover placement="bottomLeft" title="" content={addResrceInput} trigger="click" visible={this.state.visible} onVisibleChange={this.handleVisibleChange}>
-                                    <a href="#" className="specifyRes_a"><Icon type="plus" />Specify Resource</a>
+                                    <a href="" className="specifyRes_a"><Icon type="plus" />Specify Resource</a>
                                 </Popover> |
                             </Col>
                             <Col span={14} className="">Resources: {tagResources}</Col>

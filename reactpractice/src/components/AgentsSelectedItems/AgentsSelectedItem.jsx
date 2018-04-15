@@ -14,20 +14,20 @@ class AgentsSelectedItem extends Component {
         }
     }
     shouldComponentUpdate(nextProps, nextState) {
-        return true;
+        return this.state.twItemProps !== nextState.twItemProps || this.state.visible !== nextState.visible || this.state.toBeAddedResces !== nextState.toBeAddedResces;
     }
     componentDidMount() {
-
     }
     componentWillUnmount() {
+    }
+    componentWillReceiveProps(newProps) {
 
     }
     closeTagEvnt = (resourceItem) => {
         // Delete resource
-        this.state.twItemProps.resources = this.state.twItemProps.resources.filter(twItem => twItem !== resourceItem);
-        console.log(this.state.twItemProps);
-        // const twItemProps = this.state.twItemProps;
-        // this.setState({twItemProps});
+        let twItemProps = this.state.twItemProps;
+        twItemProps.resources = twItemProps.resources.filter(twItem => twItem !== resourceItem);
+        this.setState({ twItemProps });
     }
     addResourceEvnt = () => {
         // Add resource
@@ -99,7 +99,7 @@ class AgentsSelectedItem extends Component {
                     <div className="resourceItem_div">
                         <Row>
                             <Col span={5} className="">
-                                <Popover placement="bottomRight" title="" content={addResrceInput} trigger="click" visible={this.state.visible} onVisibleChange={this.handleVisibleChange}>
+                                <Popover placement="bottomLeft" title="" content={addResrceInput} trigger="click" visible={this.state.visible} onVisibleChange={this.handleVisibleChange}>
                                     <a href="#" className="specifyRes_a"><Icon type="plus" />Specify Resource</a>
                                 </Popover> |
                             </Col>
@@ -107,7 +107,7 @@ class AgentsSelectedItem extends Component {
                             <Col span={2} className="">{isDenyElement}</Col>
                         </Row>
                     </div>
-                    
+
                 </div>
             </div>
         );

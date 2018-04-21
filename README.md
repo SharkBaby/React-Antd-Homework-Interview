@@ -3,7 +3,7 @@
   react + antdesign + babel + ES6 + jest
 
 # react
-ThoughtWorks interview homework, it is build up with React V16, antd 3.4.1, Babel, jest to complete unit test
+Interview homework, it is build up with React V16, antd 3.4.1, Babel, jest to complete unit test
 
 # 安装
   1. 克隆仓库 `git clone https://github.com/SharkBaby/ReactPractice`

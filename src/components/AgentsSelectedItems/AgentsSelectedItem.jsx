@@ -8,36 +8,21 @@ class AgentsSelectedItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            twItemProps: this.props.twItemProps,
             visible: false,
             toBeAddedResces: ''
         }
     }
-    shouldComponentUpdate(nextProps, nextState) {
-        return this.state.twItemProps !== nextState.twItemProps || this.state.visible !== nextState.visible || this.state.toBeAddedResces !== nextState.toBeAddedResces;
-    }
-    componentDidMount() {
-    }
-    componentWillUnmount() {
-    }
-    componentWillReceiveProps(newProps) {
-
-    }
     closeTagEvnt = (resourceItem) => {
         // Delete resource
-        let twItemProps = this.state.twItemProps;
-        twItemProps.resources = twItemProps.resources.filter(twItem => twItem !== resourceItem);
-        this.setState({ twItemProps });
+        // let twItemProps = this.props.twItemProps;
+        // twItemProps.resources = twItemProps.resources.filter(twItem => twItem !== resourceItem);
     }
     addResourceEvnt = () => {
         // Add resource
         let tobeMerged = this.state.toBeAddedResces.trim();
-        if (tobeMerged != null && tobeMerged != '') {
+        if (tobeMerged !== null && tobeMerged !=='') {
             tobeMerged = tobeMerged.split(',');
-            this.state.twItemProps.resources = this.state.twItemProps.resources.concat(tobeMerged);
-            this.setState(prevState => ({
-                twItemProps: prevState.twItemProps
-            }));
+            this.props.twItemProps.resources = this.props.twItemProps.resources.concat(tobeMerged);
             //empty input box
             this.setState({
                 toBeAddedResces: '',
@@ -63,7 +48,7 @@ class AgentsSelectedItem extends Component {
     render() {
         let isDenyClass;
         let isDenyElement;
-        let twItemProps = this.state.twItemProps;
+        let twItemProps = this.props.twItemProps;
         let tagResources = twItemProps.resources.map((tagItem, tagIndex) => {
             return (<Tag key={tagIndex} closable afterClose={() => this.closeTagEvnt(tagItem)} className="tagResource_tag">{tagItem}</Tag>);
         });

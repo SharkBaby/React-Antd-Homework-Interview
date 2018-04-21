@@ -10,7 +10,7 @@ class AgentsSummaryHistory extends Component {
     constructor(props) {
         super(props);
         let historyAmount = 10,
-            historyArr = new Array();
+            historyArr = [];
         for (let i = 0; i < historyAmount; i++) {
             historyArr.push('bjstdmngbgr02/Acceptance_test');
         }
@@ -21,15 +21,6 @@ class AgentsSummaryHistory extends Component {
             ],
             historyArr: historyArr
         };
-    }
-    shouldComponentUpdate(nextProps, nextState) {
-        return true;
-    }
-    componentDidMount() {
-
-    }
-    componentWillUnmount() {
-
     }
     render() {
         let summaryItems = this.state.summaryArr.map((summaryItem, summaryIndex) => {

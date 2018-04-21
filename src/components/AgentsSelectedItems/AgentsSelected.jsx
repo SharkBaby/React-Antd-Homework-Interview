@@ -20,21 +20,6 @@ class AgentsSelected extends Component {
                 { twUrl: 'bjstdmngbgr05.thoughtworks.com', progress: 'idle', ipAddress: '192.168.1.5', phyAddress: '/var/lib/cruise-agent', resources: ['ubuntu'], isDeny: true }
             ]
         };
-        
-    }
-    tick() {
-        this.setState({
-
-        });
-    }
-    shouldComponentUpdate(nextProps, nextState) {
-        return true;
-    }
-    componentDidMount() {
-
-    }
-    componentWillUnmount() {
-
     }
     render() {
         let twItems = this.state.thoughtworksArr.map((twItem, twIndex) => {

@@ -10,22 +10,8 @@ class AgentsButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            buttonArr: new Array('All', 'Physical', 'Virtual')
+            buttonArr: ['All', 'Physical', 'Virtual']
         };
-    }
-    tick() {
-        this.setState({
-
-        });
-    }
-    shouldComponentUpdate(nextProps, nextState) {
-        return true;
-    }
-    componentDidMount() {
-
-    }
-    componentWillUnmount() {
-
     }
     onChange = (e) => {
         console.log(`radio checked:${e.target.value}`);

@@ -1,0 +1,19 @@
+* 需求：符合作业需求，各个Tab可点击，可添加resources。 
+* UI：符合设计。 
+* 工程化：使用了react-scripts，有开发环境和产品环境的构建。 
+* 模块化：模块化较好，能够将页面上展示的元素模块化为不同的组件。 
+* 代码风格：代码整齐，可阅读性强，组件命名比较准确。 
+* CSS：CSS和组件组织在一起，有助于组件的复用。 
+* JS：使用了React框架。
+
+What was not so good? Please use examples to support your comments.
+* React：从组件中大量冗余的shouldComponentUpdate可推断作者可能对React理解不够深入。 
+* CSS：引入了antd组件库，使其CSS中大量存在样式的强制重写，不利于样式的维护，如AgentsButton.css。 
+* 测试：项目中没有引入任何测试代码。 
+* 工程化：引入react-scripts后无法看出作者对工程化方面的思考。 
+* 类型检查：task中定义了flow的类型检查，但并没有使用。 
+* 变量问题：存在部分变量简写的拼写错误。 
+* 组件间交互：AgentsSelectedItem中对资源增删的逻辑应放置在父组件中，可看出作者对React中处理相似逻辑没有清晰的思考。
+
+High-level conclusion of your feedback and any concerns or areas to be addressed at the next round of interviewing
+总体上能够写出符合业务的代码，可抽象出组件。但存在逻辑交互的组件的复用性很低，缺乏对React的深入理解。

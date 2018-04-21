@@ -6,23 +6,13 @@ import SingedIn from '../SignedIn/SignedIn';
 // Import css style for this component
 import './Dashboard.css';
 const TabPane = Tabs.TabPane;
-
-
 class Dashboard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tabsArr: new Array('DASHBOARD', 'MY CRUISE', 'AGENTS', 'HELP')
+            tabsArr: ['DASHBOARD', 'MY CRUISE', 'AGENTS', 'HELP']
         };
         this.callback = this.callback.bind(this);
-    }
-    shouldComponentUpdate(nextProps, nextState) {
-        return true;
-    }
-    componentDidMount() {
-
-    }
-    componentWillUnmount() {
     }
     callback(key) {
         console.log(key);
